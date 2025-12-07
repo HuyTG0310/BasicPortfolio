@@ -1,0 +1,170 @@
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+header .navbar-brand {
+    font-size: 36px;
+}
+
+header .navbar-brand i {
+    font-size: 45px;
+    color: green;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: green !important;
+    font-weight: 400;
+}
+
+
+.hero-simple {
+    height: 100vh;
+    background-image: url(image/mountains.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.simple-hero h1 {
+    font-size: 56px;
+    line-height: 65px;
+    margin-bottom: 10px;
+}
+
+.hero-simple p {
+    font-size: 24px;
+}
+
+/* PROJECTS SECTION */
+
+
+.project-item {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, .13);
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+
+.project-item:hover h3 {
+    color: #35a22c;
+    transition: all 0.3s;
+}
+
+
+/* 4. FEATURE SECTION (services) */
+
+.feature {
+    background: url(image/finland.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 0 120px;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+}
+
+
+
+.feature .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.feature-item {
+    padding: 40px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.feature-item:hover {
+    background-color: #000;
+    border-color: #fff;
+    transition: all 0.5s;
+}
+
+.feature-item i {
+    font-size: 48px;
+    color: #35a22c;
+}
+
+.feature-item h4 {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 25px;
+    font-weight: 800;
+}
+
+.feature .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 10, 12, 0.72);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* 5. FOOTER */
+
+footer {
+    background: #222;
+    padding-top: 10px;
+}
+
+footer a {
+    color: #aaa;
+    margin: 0 10px;
+}
+
+footer .footer__main {
+    padding-top: 10px;
+}
+
+footer .footer__main i {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #454545;
+    border-radius: 100%;
+}
+
+footer .footer__main i:hover {
+    border-color: #35a22c;
+    color: #35a22c;
+    transition: all 0.5s;
+}
+
+.footer__copies {
+    border-top: 1px solid #454545;   
+    padding-top: 30px;
+    margin-top: 30px;
+}
